@@ -5,27 +5,21 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="toDoListForm">
     <div class="mainToDo">
         <div class="yellowHeader"></div>
         <h1 class="ToDoListText">To-Do List</h1>
-        <form class="toDoListForm">
-            <label>
-                <img class= "sortImage" name="sortImage" src="./images/NotFilledSortDown.png" alt="NotFilledSort icon">
-            </label>
-            <label>
-                <div class="divInput">
-                    <input class="inputToDo" name="inputToDo" type="text">
-                    <button class="delete" name="delete">X</button>
-                </div>
-            </label>
-            <label>
-                <button class="buttonAdd">
-                    <div class="circlePlus" name="circlePlus">+</div>
-                    <p class="buttonText" name="buttonText">Добавить</p>
-                </button>
-            </label>
-        </form>
+        <button type="button" class= "sortImage" value="1"></button>
+        <!-- <img src="./images/NotFilledSortDown.png" alt="sort Icon" class= "sortImage" name="sortImage"> -->
+        <div class="divInput">
+            <input class="inputToDo" type="text">
+            <button type="button" class="delete">X</button>
+        </div>
+        <button type="button" class="buttonAdd">
+        <div class="circlePlus">+</div>
+            <p class="buttonText">Добавить</p>
+        </button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

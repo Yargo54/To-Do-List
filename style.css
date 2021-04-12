@@ -31,17 +31,19 @@
 }
 
 .sortImage{
-    width: 6.69642857%;
-    height: 5.82627119%;
+    width: 4.69642857%;
+    height: 4.5%;
     margin-right: 8.92857143%;
     margin-bottom: 3.64583333%;
     margin-left: 84.375%;
+    background: url("./images/NotFilledSortDown.png");
+    outline: none;
+    border-style: none;
 }
 
 .divInput{
     display: flex;
     width: 85.1190476%;
-    height: 16.9491525%;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
     margin: 0 auto;
