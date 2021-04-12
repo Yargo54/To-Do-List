@@ -7,9 +7,24 @@ let add = document.querySelector('.add')
 let divInput = document.querySelector('.divInput')
 let maintodo = document.querySelector('.mainToDo')
 
+function ColorChange(event) {
+    event.addEventListener('mousedown', ()=>{
+        event.style.backgroundColor = "indigo"  
+    })
+    event.addEventListener('mouseup', ()=>{
+        event.style.backgroundColor = "white"
+        divInput.remove();
+    })
+}
+
 function Add(){
     let addElem = divInput.cloneNode(true);
+    let but = addElem.querySelector('.delete')
     add.appendChild(addElem);
+    ColorChange(but);
+    but.addEventListener('click', ()=>{
+        addElem.remove();
+    })
     inputVal.value = '';
     maintodo.style.height = '1%';
 }
@@ -28,14 +43,4 @@ icon.addEventListener('click', () =>{
     }
 })
 
-del.addEventListener('mousedown', ()=>{
-    if(inputVal.id === "0"){
-        del.style.backgroundColor = "indigo"
-        inputVal.value = '';  
-        console.log('del')
-    }
-})
-
-del.addEventListener('mouseup', ()=>{
-    del.style.backgroundColor = "white"
-})
+ColorChange(del);
