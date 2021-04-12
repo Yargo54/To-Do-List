@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.mainToDo{
+    width: 500px;
+    height: 335px;
+    margin: 0 auto;
+    border: 1px solid rgba(196, 196, 196, 1);
+    border-radius: 20px;
+}
+
+.yellowHeader{
+    width: 100%;
+    height: 11.86%;
+    border-radius: 20px 20px 0 0;
+    background-color: #FFDC40;
+}
+
+.ToDoListText{
+    width: 58.92%;
+    height: 7.4%;
+    font: 26px "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 30px;
+    margin: 4.76190476% auto;
+    text-align: center;
+}
+
+.toDoListForm{
+    display: block;
+}
+
+.sortImage{
+    width: 6.69642857%;
+    height: 5.82627119%;
+    margin-right: 8.92857143%;
+    margin-bottom: 3.64583333%;
+    margin-left: 84.375%;
+}
+
+.divInput{
+    display: flex;
+    width: 85.1190476%;
+    height: 16.9491525%;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 5.35714286%;
+}
+
+.inputToDo{
+    width: 85.1190476%;
+    font: 14px "Roboto", sans-serif;
+    font-weight: 400;
+    padding-bottom: 4.5%;
+    padding-top: 4.5%;
+    box-sizing: border-box;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.delete{
+    border-radius: 100%;
+    width: 6.677378%;
+    height: 5.67737786%;
+    margin-top: 3.51288056%;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: white;
+    border: 1px solid #C4C4C4;
+    color: #C4C4C4;
+    outline: none;
+}
+
+.buttonAdd{
+    width: 44.6428571%;
+    height: 17.7966102%;
+    background-color: #833AE0;
+    border-radius: 71px;
+    margin-left: 27.3809524%;
+    margin-right: 27.3809524%;
+    display: flex;
+    padding: 0;
+    outline: none;
+}
+
+.circlePlus{
+    width: 52px;
+    height: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: white;
+    font: 24px "Roboto", sans-serif;
+    border-radius: 100%;
+    border: 1px solid #833AE0;
+    background-color: #9953F1;
+    padding-left: 0;
+}
+
+.buttonText{
+    font: 17px "Roboto", sans-serif;
+    color: white;
+    padding-left: 36px;
+}
