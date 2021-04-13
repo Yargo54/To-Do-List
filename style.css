@@ -40,6 +40,17 @@
     border-style: none;
 }
 
+.sortImage1{
+    width: 23.48px;
+    height: 15.08px;
+    margin-right: 8.92857143%;
+    margin-bottom: 3.64583333%;
+    margin-left: 84.375%;
+    background: url("./images/NotFilledSortUp.png");
+    outline: none;
+    border-style: none;
+}
+
 .add{
     border: 1px solid #C4C4C4;
     border-radius: 10px;
@@ -67,7 +78,7 @@
 
 .delete{
     border-radius: 100%;
-    width: 28.41px;
+    width: 27px;
     height: 27px;
     margin-top: 3.51288056%;
     padding-top: 5px;
@@ -75,9 +86,11 @@
     padding-left: 6px;
     padding-right: 6px;
     background-color: white;
-    border: 1px solid #C4C4C4;
+    border: none;
     color: #C4C4C4;
     outline: none;
+    background: url("./images/IconDeleteNotFill.svg") no-repeat;
+    background-size: cover;
 }
 
 .buttonAdd{
@@ -110,4 +123,17 @@
     font: 17px "Roboto", sans-serif;
     color: white;
     padding-left: 36px;
+}
+
+.sortImage:hover{
+    background: url("./images/FilledSortDown.png");
+}
+
+.sortImage1:hover{
+    background-image: url("./images/FilledSortUp.png");
+}
+
+.delete:hover{
+    background: url("./images/IconDeleteFill.svg") no-repeat;
+    background-size: cover;
 }
