@@ -10,7 +10,7 @@ let arrayOfTask = [];
 let check = 'Up';
 function ChangeSortImage(){
     if (check === 'Up'){
-        icon.style.background = "url('" +"./images/FilledSortUp.png" + "')";
+        icon.className = 'sortImage1';
         check = 'Down';
         arrayOfTask.sort((a, b) =>{
             if (a.item > b.item){
@@ -21,7 +21,7 @@ function ChangeSortImage(){
             return 0;
         })
     } else if(check === 'Down'){
-        icon.style.background = "url('" +"./images/FilledSortDown.png" + "')";
+        icon.className = 'sortImage';
         check = 'Up';
         arrayOfTask.sort((a, b) =>{
             if (a.item > b.item){
@@ -34,24 +34,18 @@ function ChangeSortImage(){
     }
 }
 
-function ColorChange(event) {
-    event.addEventListener('mousedown', ()=>{
-        event.style.backgroundColor = "indigo" 
-    })
-    event.addEventListener('mouseup', ()=>{
-        event.style.backgroundColor = "white"
-    })
-}
-
 function Add(){
     let addElem = divInput.cloneNode(true);
     add.appendChild(addElem);
     let val = addElem.querySelector('.inputToDo')
     val.value = '';
     let but = addElem.querySelector('.delete');
-    ColorChange(but);
     but.addEventListener('click', ()=>{
-        addElem.remove();
+        if(add.children.length === 1){
+            val.value = '';
+        } else {
+            addElem.remove();
+        }
     })
 }
 
@@ -80,21 +74,19 @@ icon.addEventListener('click', () =>{
         newDiv.className = 'divInput';  
         newDiv.append(newInput);
         newDiv.append(newButton); 
-        document.querySelector('.add').append(newDiv);
-        ColorChange(newButton);   
+        document.querySelector('.add').append(newDiv);  
         newButton.addEventListener('click', () =>{
-            if(add.children.length === 1){
-                newInput.value = ''
-            } else {
-                newDiv.remove();
-            }
-        })
+        if(add.children.length === 1){
+            newInput.value = ''
+        } else {
+            newDiv.remove();
+        }
+        });
     }
 
     arrayOfTask=[];
 })
 
-ColorChange(del);   
 del.addEventListener('click', () =>{
     if(add.children.length === 1){
         inputVal.value = '';
