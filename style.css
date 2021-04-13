@@ -69,6 +69,7 @@
     font-weight: 400;
     padding-bottom: 4.5%;
     padding-top: 4.5%;
+    padding-left: 15px;
     box-sizing: border-box;
     text-align: left;
     border: none;
@@ -104,12 +105,13 @@
     padding: 0;
     outline: none;
     margin-bottom: 19px;
+    border: none;
 }
 
 .circlePlus{
-    width: 55px;
-    height: 32px;
-    padding-top: 11px;
+    width: 59px;
+    height: 34px;
+    padding-top: 13px;
     padding-bottom: 11px;
     color: white;
     font: 24px "Roboto", sans-serif;
