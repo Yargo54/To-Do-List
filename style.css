@@ -2,22 +2,22 @@
 
 .mainToDo{
     width: 500px;
-    height: 335px;
+    height: 320px;
     margin: 0 auto;
     border: 1px solid rgba(196, 196, 196, 1);
     border-radius: 20px;
 }
 
 .yellowHeader{
-    width: 100%;
-    height: 11.86%;
+    width: 500px;
+    height: 39.73px;
     border-radius: 20px 20px 0 0;
     background-color: #FFDC40;
 }
 
 .ToDoListText{
-    width: 58.92%;
-    height: 7.4%;
+    width: 294.6px;
+    height: 24.79px;
     font: 26px "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -31,25 +31,30 @@
 }
 
 .sortImage{
-    width: 6.69642857%;
-    height: 5.82627119%;
+    width: 23.48px;
+    height: 15.08px;
     margin-right: 8.92857143%;
     margin-bottom: 3.64583333%;
     margin-left: 84.375%;
+    background: url("./images/NotFilledSortDown.png");
+    outline: none;
+    border-style: none;
 }
 
-.divInput{
-    display: flex;
-    width: 85.1190476%;
-    height: 16.9491525%;
+.add{
     border: 1px solid #C4C4C4;
     border-radius: 10px;
+    width: 85.1190476%;
     margin: 0 auto;
     margin-bottom: 5.35714286%;
 }
 
+.divInput{
+    display: flex;
+}
+
 .inputToDo{
-    width: 85.1190476%;
+    width: 362.25px;
     font: 14px "Roboto", sans-serif;
     font-weight: 400;
     padding-bottom: 4.5%;
@@ -63,8 +68,8 @@
 
 .delete{
     border-radius: 100%;
-    width: 6.677378%;
-    height: 5.67737786%;
+    width: 28.41px;
+    height: 27px;
     margin-top: 3.51288056%;
     padding-top: 5px;
     padding-bottom: 4px;
@@ -77,8 +82,8 @@
 }
 
 .buttonAdd{
-    width: 44.6428571%;
-    height: 17.7966102%;
+    width: 223.21px;
+    height: 59.61px;
     background-color: #833AE0;
     border-radius: 71px;
     margin-left: 27.3809524%;
@@ -86,11 +91,12 @@
     display: flex;
     padding: 0;
     outline: none;
+    margin-bottom: 19px;
 }
 
 .circlePlus{
-    width: 52px;
-    height: 30px;
+    width: 55px;
+    height: 32px;
     padding-top: 11px;
     padding-bottom: 11px;
     color: white;
