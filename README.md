@@ -1,6 +1,6 @@
 #  To-Do List (сайт "Список задач").
-deploy: https://gallant-jang-8cfcb3.netlify.app/
-запуск приложения из IDE Visual Studio Code: 
+### deploy: https://gallant-jang-8cfcb3.netlify.app/
+### запуск приложения из IDE Visual Studio Code: ### 
 1. Установить расширение Live Server.
 ---
 ![image](https://user-images.githubusercontent.com/36625032/134818614-f49e7ba4-8bfc-4aea-958e-fffbdba4263d.png)
